@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomePage">
+
+    <TextView
+        android:id="@+id/hosGeldin"
+        android:layout_width="146dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="348dp"
+        android:layout_marginTop="44dp"
+        android:text="Hoş Geldin"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/sifirla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:ems="10"
+        android:hint="Adınızı Yazın"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/rekor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hosGeldin" />
+
+    <TextView
+        android:id="@+id/rekor"
+        android:layout_width="143dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:text="Henüz Rekor Yok"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/baslaButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <Button
+        android:id="@+id/baslaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="250dp"
+        android:layout_marginStart="24dp"
+        android:onClick="oyunBasla"
+        android:text="Başla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rekor"
+        app:layout_constraintTop_toBottomOf="@+id/rekor" />
+
+    <Button
+        android:id="@+id/sifirla"
+        android:layout_width="109dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="110dp"
+        android:onClick="skorSifirla"
+        android:text="Skoru Sıfırla"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hosGeldin" />
+
+</android.support.constraint.ConstraintLayout>
